@@ -3,18 +3,7 @@ import { marshall } from "@aws-sdk/util-dynamodb";
 import { client } from "./imports";
 import { Request, Response } from "express";
 
-export async function Query(pk: string) {
-    const queryParams = {
-        TableName: 'MyMusicDepot',
-        KeyConditionExpression: "PartitionKey = :pk",
-        ExpressionAttributeValues: marshall({
-            ":pk": pk
-        }),
-    }
-    return await client.send(new QueryCommand(queryParams));
-}
-
-export async function Get(pk: string, sk: string) {
+export async function Get(pk: string) {
     const queryParams = {
         TableName: 'MyMusicDepot',
         KeyConditionExpression: "PartitionKey = :pk",
@@ -27,7 +16,7 @@ export async function Get(pk: string, sk: string) {
 
 export async function Delete( pk: string, sk: string) {
     const delParams = {
-
+        
     }
     return await client.send(new DeleteItemCommand(delParams));
 }
@@ -44,6 +33,10 @@ export async function Update(item:any) {
 
     }
     return await client.send(new UpdateItemCommand(updateParams));
+}
+
+export async function Patch(item:any) {
+
 }
 
 
