@@ -1,24 +1,27 @@
-import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
-import { Query } from "./functions";
+import { PutItemCommand } from "@aws-sdk/client-dynamodb";
 import { client } from "./imports";
 import { Response, Request } from "express";
 
-export async function GetClient(req:Request, res:Response) {
 
-}
+const tabName = "MyMusicDepot";
 
-export async function PutClient(req:Request, res:Response) {
-
-}
-
-export async function PatchClient(req:Request, res:Response) {
-
-}
-
-export async function DeleteClient(req:Request, res:Response) {
-
-}
-
-export async function PostClient(req:Request, res:Response) {
-    
+export async function PostClient(req: Request, res: Response) {
+    const data = await req.body;
+    const pk = req.url;
+    const putCommand = {
+        TableName: tabName,
+        Item: {
+            PartitionKey: { S: pk },
+            SortKey: { S: data.SortKey },
+            clTransactions: { L: data.clTransactions },
+            clStudents: { L: data.clStudents },
+            clFirstName: { S: data.clFirstName },
+            clLastName: { S: data.clLastName },
+            clAuthor: { S: data.clAuthor },
+            clNotes: { S: data.clNotes },
+            clBalance: {N: data.clBalance}
+        },
+    };
+    await client.send(new PutItemCommand(putCommand));
+    res.status(200).json({ message: "OK" });
 }

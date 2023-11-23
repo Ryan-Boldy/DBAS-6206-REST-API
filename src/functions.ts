@@ -1,4 +1,4 @@
-import { DeleteItemCommand, PutItemCommand, QueryCommand, UpdateItemCommand } from "@aws-sdk/client-dynamodb";
+import { DeleteItemCommand, PutItemCommand, QueryCommand, ReturnValue, UpdateItemCommand } from "@aws-sdk/client-dynamodb";
 import { marshall } from "@aws-sdk/util-dynamodb";
 import { client } from "./imports";
 import { Request, Response } from "express";
@@ -16,29 +16,49 @@ export async function Get(pk: string) {
 
 export async function Delete( pk: string, sk: string) {
     const delParams = {
-        
+      TableName: 'MyMusicDepot',
+      Key: {
+        PartitionKey: {S: pk},
+        SortKey: {S: sk},
+      }  
     }
     return await client.send(new DeleteItemCommand(delParams));
 }
 
-export async function Put(item:any) {
-    const putParams = {
 
-    }
-    return await client.send(new PutItemCommand(putParams));
+export async function Update(data: any, pk:string) {
+    const updateExpressionParts:string[] = [];
+    const expressionAttributeValues: Record<string, any> = {};
+
+    // Iterate over data properties and build the update expression
+    Object.entries(data).forEach(([key, value]) => {
+        if (value !== null && value !== undefined && key !== "SortKey") {
+            const expressionKey = `${key}`;
+            const expressionValue = `:${key}`; 
+            
+            updateExpressionParts.push(`${expressionKey} = ${expressionValue}`);
+            //expressionAttributeValues[expressionKey] = key;
+            expressionAttributeValues[expressionValue] = value;
+        }
+    });
+    console.log(data);
+    console.log(expressionAttributeValues);
+    console.log(updateExpressionParts.join(", "));
+    const updateCommand = {
+        TableName: "MyMusicDepot",
+        Key: {
+            PartitionKey: {S: pk},
+            SortKey: {S: data.SortKey}
+        },
+        UpdateExpression: `SET ${updateExpressionParts.join(", ")}`,
+        ExpressionAttributeValues: marshall(expressionAttributeValues),
+        ReturnValues: "ALL_NEW" as ReturnValue,
+    };
+
+    console.log(updateCommand);
+    return await client.send(new UpdateItemCommand(updateCommand));
+
 }
-
-export async function Update(item:any) {
-    const updateParams = {
-
-    }
-    return await client.send(new UpdateItemCommand(updateParams));
-}
-
-export async function Patch(item:any) {
-
-}
-
 
 export async function Populate(req:Request, res:Response) {
     async function Execute(putParams: any[]) {

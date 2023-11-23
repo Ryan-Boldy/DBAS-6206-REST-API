@@ -9,10 +9,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Populate = exports.Query = void 0;
+exports.Populate = exports.Delete = exports.Get = void 0;
 const client_dynamodb_1 = require("@aws-sdk/client-dynamodb");
 const util_dynamodb_1 = require("@aws-sdk/util-dynamodb");
-function Query(client, pk) {
+const imports_1 = require("./imports");
+function Get(pk) {
     return __awaiter(this, void 0, void 0, function* () {
         const queryParams = {
             TableName: 'MyMusicDepot',
@@ -21,18 +22,31 @@ function Query(client, pk) {
                 ":pk": pk
             }),
         };
-        return yield client.send(new client_dynamodb_1.QueryCommand(queryParams));
+        return yield imports_1.client.send(new client_dynamodb_1.QueryCommand(queryParams));
     });
 }
-exports.Query = Query;
-function Populate(client) {
+exports.Get = Get;
+function Delete(pk, sk) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const delParams = {
+            TableName: 'MyMusicDepot',
+            Key: {
+                PartitionKey: { S: pk },
+                SortKey: { S: sk },
+            }
+        };
+        return yield imports_1.client.send(new client_dynamodb_1.DeleteItemCommand(delParams));
+    });
+}
+exports.Delete = Delete;
+function Populate(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
         function Execute(putParams) {
             return __awaiter(this, void 0, void 0, function* () {
                 const promises = [];
                 for (const param of putParams) {
                     console.log(new client_dynamodb_1.PutItemCommand(param).input.Item);
-                    promises.push(client.send(new client_dynamodb_1.PutItemCommand(param)));
+                    promises.push(imports_1.client.send(new client_dynamodb_1.PutItemCommand(param)));
                 }
                 return Promise.all(promises);
             });

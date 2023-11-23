@@ -1,24 +1,27 @@
-import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
-import { Query } from "./functions";
+import { PutItemCommand } from "@aws-sdk/client-dynamodb";
 import { client } from "./imports";
 import { Response, Request } from "express";
 
-export async function GetInstructor(req:Request, res:Response) {
 
-}
+const tabName = "MyMusicDepot";
 
-export async function PutInstructor(req:Request, res:Response) {
+export async function PostInstructor(req: Request, res: Response) {
+    const data = await req.body;
+    const pk = req.url;
+    const putCommand = {
+        TableName: tabName,
+        Item: {
+            PartitionKey: { S: pk },
+            SortKey: { S: data.SortKey },
+            inClasses: { L: data.inClasses },
+            inFirstName: { S: data.inFirstName },
+            inLastName: { S: data.inLastName },
+            inTransactions: { L: data.inTransactions },
+            inAuthor: { S: data.inAuthor },
+            inNotes: { S: data.inNotes }
+        },
+    };
 
-}
-
-export async function PatchInstructor(req:Request, res:Response) {
-
-}
-
-export async function DeleteInstructor(req:Request, res:Response) {
-
-}
-
-export async function PostInstructor(req:Request, res:Response) {
-    
+    await client.send(new PutItemCommand(putCommand));
+    res.status(200).json({ message: "OK" });
 }

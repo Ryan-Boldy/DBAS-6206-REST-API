@@ -1,14 +1,13 @@
-import { marshall } from '@aws-sdk/util-dynamodb';
 import express, { query } from 'express';
-import { Populate, Query } from './functions';
-import { DeleteStaff, GetStaff, PatchStaff, PostStaff, PutStaff } from './staff';
-import { client } from './imports';
-import { DeleteClass, GetClass, PatchClass, PostClass, PutClass } from './classes';
-import { DeleteBooking, GetBooking, PatchBooking, PostBooking, PutBooking } from './bookings';
-import { GetClient, PutClient, PostClient, PatchClient, DeleteClient } from './clients';
-import { GetInstructor, PutInstructor, PostInstructor, PatchInstructor, DeleteInstructor } from './instructors';
-import { GetStudent, PutStudent, PostStudent, PatchStudent, DeleteStudent } from './student';
-import { GetTransaction, PutTransaction, PostTransaction, PatchTransaction, DeleteTransaction } from './transactions';
+import { Populate } from './functions';
+import { PostStaff } from './staff';
+import { PostClass} from './classes';
+import { PostBooking } from './bookings';
+import { PostClient } from './clients';
+import { PostInstructor } from './instructors';
+import { PostStudent} from './student';
+import { PostTransaction } from './transactions';
+import { SharedDelete, SharedGet, SharedUpdate } from './shared';
 
 const app = express();
 const port = 3005;
@@ -22,50 +21,43 @@ app.listen(port, () => {
 app.get('/init', Populate);
   
 //Staff CRUD
-app.get('/staff', GetStaff);
-app.put('/staff', PutStaff);
+app.get('/staff', SharedGet);
+app.patch('/staff', SharedUpdate);
+app.delete('/staff', SharedDelete);
 app.post('/staff', PostStaff);
-app.patch('/staff', PatchStaff);
-app.delete('/staff', DeleteStaff);
 
 //Class CRUD
-app.get('/class', GetClass);
-app.put('/class', PutClass);
+app.get('/class', SharedGet);
+app.patch('/class', SharedUpdate);
+app.delete('/class', SharedDelete);
 app.post('/class', PostClass);
-app.patch('/class', PatchClass);
-app.delete('/class', DeleteClass);
 
 //Booking CRUD
-app.get('/booking', GetBooking);
-app.put('/booking', PutBooking);
+app.get('/booking', SharedGet);
+app.patch('/booking', SharedUpdate);
+app.delete('/booking', SharedDelete);
 app.post('/booking', PostBooking);
-app.patch('/booking', PatchBooking);
-app.delete('/booking', DeleteBooking);
 
 //Clients CRUD
-app.get('/client', GetClient);
-app.put('/client', PutClient);
+app.get('/client', SharedGet);
+app.patch('/client', SharedUpdate);
+app.delete('/client', SharedDelete);
 app.post('/client', PostClient);
-app.patch('/client', PatchClient);
-app.delete('/client', DeleteClient);
 
 //Instructors CRUD
-app.get('/instructor', GetInstructor);
-app.put('/instructor', PutInstructor);
+app.get('/instructor', SharedGet);
+app.patch('/instructor', SharedUpdate);
+app.delete('/instructor', SharedDelete);
 app.post('/instructor', PostInstructor);
-app.patch('/instructor', PatchInstructor);
-app.delete('/instructor', DeleteInstructor);
 
 //Students CRUD
-app.get('/student', GetStudent);
-app.put('/student', PutStudent);
+app.get('/student', SharedGet);
+app.patch('/student', SharedUpdate);
+app.delete('/student', SharedDelete);
 app.post('/student', PostStudent);
-app.patch('/student', PatchStudent);
-app.delete('/student', DeleteStudent);
 
 //Transactions CRUD
-app.get('/transaction', GetTransaction);
-app.put('/transaction', PutTransaction);
+app.get('/transaction', SharedGet);
+app.patch('/transaction', SharedUpdate);
+app.delete('/transaction', SharedDelete);
 app.post('/transaction', PostTransaction);
-app.patch('/transaction', PatchTransaction);
-app.delete('/transaction', DeleteTransaction);
