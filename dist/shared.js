@@ -9,27 +9,33 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PostClass = void 0;
-const client_dynamodb_1 = require("@aws-sdk/client-dynamodb");
-const imports_1 = require("./imports");
-const tabName = "MyMusicDepot";
-function PostClass(req, res) {
+exports.SharedUpdate = exports.SharedDelete = exports.SharedGet = void 0;
+const functions_1 = require("./functions");
+function SharedGet(req, res) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const pk = req.url;
+        const result = yield (0, functions_1.Get)(pk);
+        res.status(200).json(result.Items);
+    });
+}
+exports.SharedGet = SharedGet;
+function SharedDelete(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
         const data = yield req.body;
         const pk = req.url;
-        const putCommand = {
-            TableName: tabName,
-            Item: {
-                PartitionKey: { S: pk },
-                SortKey: { S: data.SortKey },
-                classStudents: { L: data.classStudents },
-                classInstructor: { S: data.classInstructor },
-                classAuthor: { S: data.classAuthor },
-                classNotes: { S: data.classNotes },
-            },
-        };
-        yield imports_1.client.send(new client_dynamodb_1.PutItemCommand(putCommand));
+        console.log(data);
+        const sk = data.SortKey;
+        yield (0, functions_1.Delete)(pk, sk);
         res.status(200).json({ message: "OK" });
     });
 }
-exports.PostClass = PostClass;
+exports.SharedDelete = SharedDelete;
+function SharedUpdate(req, res) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const data = yield req.body;
+        const pk = req.url;
+        const result = yield (0, functions_1.Update)(data, pk);
+        res.status(200).json({ message: "OK", item: result.Attributes });
+    });
+}
+exports.SharedUpdate = SharedUpdate;

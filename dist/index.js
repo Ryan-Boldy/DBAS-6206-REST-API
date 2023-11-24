@@ -12,6 +12,7 @@ const clients_1 = require("./clients");
 const instructors_1 = require("./instructors");
 const student_1 = require("./student");
 const transactions_1 = require("./transactions");
+const shared_1 = require("./shared");
 const app = (0, express_1.default)();
 const port = 3005;
 app.use(express_1.default.json());
@@ -21,42 +22,37 @@ app.listen(port, () => {
 //Initalize route
 app.get('/init', functions_1.Populate);
 //Staff CRUD
-app.get('/staff', staff_1.GetStaff);
+app.get('/staff', shared_1.SharedGet);
+app.patch('/staff', shared_1.SharedUpdate);
+app.delete('/staff', shared_1.SharedDelete);
 app.post('/staff', staff_1.PostStaff);
-app.delete('/staff', staff_1.DeleteStaff);
 //Class CRUD
-app.get('/class', classes_1.GetClass);
-app.put('/class', classes_1.PutClass);
+app.get('/class', shared_1.SharedGet);
+app.patch('/class', shared_1.SharedUpdate);
+app.delete('/class', shared_1.SharedDelete);
 app.post('/class', classes_1.PostClass);
-app.patch('/class', classes_1.PatchClass);
-app.delete('/class', classes_1.DeleteClass);
 //Booking CRUD
-app.get('/booking', bookings_1.GetBooking);
-app.put('/booking', bookings_1.PutBooking);
+app.get('/booking', shared_1.SharedGet);
+app.patch('/booking', shared_1.SharedUpdate);
+app.delete('/booking', shared_1.SharedDelete);
 app.post('/booking', bookings_1.PostBooking);
-app.patch('/booking', bookings_1.PatchBooking);
-app.delete('/booking', bookings_1.DeleteBooking);
 //Clients CRUD
-app.get('/client', clients_1.GetClient);
-app.put('/client', clients_1.PutClient);
+app.get('/client', shared_1.SharedGet);
+app.patch('/client', shared_1.SharedUpdate);
+app.delete('/client', shared_1.SharedDelete);
 app.post('/client', clients_1.PostClient);
-app.patch('/client', clients_1.PatchClient);
-app.delete('/client', clients_1.DeleteClient);
 //Instructors CRUD
-app.get('/instructor', instructors_1.GetInstructor);
-app.put('/instructor', instructors_1.PutInstructor);
+app.get('/instructor', shared_1.SharedGet);
+app.patch('/instructor', shared_1.SharedUpdate);
+app.delete('/instructor', shared_1.SharedDelete);
 app.post('/instructor', instructors_1.PostInstructor);
-app.patch('/instructor', instructors_1.PatchInstructor);
-app.delete('/instructor', instructors_1.DeleteInstructor);
 //Students CRUD
-app.get('/student', student_1.GetStudent);
-app.put('/student', student_1.PutStudent);
+app.get('/student', shared_1.SharedGet);
+app.patch('/student', shared_1.SharedUpdate);
+app.delete('/student', shared_1.SharedDelete);
 app.post('/student', student_1.PostStudent);
-app.patch('/student', student_1.PatchStudent);
-app.delete('/student', student_1.DeleteStudent);
 //Transactions CRUD
-app.get('/transaction', transactions_1.GetTransaction);
-app.put('/transaction', transactions_1.PutTransaction);
+app.get('/transaction', shared_1.SharedGet);
+app.patch('/transaction', shared_1.SharedUpdate);
+app.delete('/transaction', shared_1.SharedDelete);
 app.post('/transaction', transactions_1.PostTransaction);
-app.patch('/transaction', transactions_1.PatchTransaction);
-app.delete('/transaction', transactions_1.DeleteTransaction);

@@ -9,29 +9,26 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PostBooking = exports.DeleteBooking = exports.PatchBooking = exports.PutBooking = exports.GetBooking = void 0;
-function GetBooking(req, res) {
-    return __awaiter(this, void 0, void 0, function* () {
-    });
-}
-exports.GetBooking = GetBooking;
-function PutBooking(req, res) {
-    return __awaiter(this, void 0, void 0, function* () {
-    });
-}
-exports.PutBooking = PutBooking;
-function PatchBooking(req, res) {
-    return __awaiter(this, void 0, void 0, function* () {
-    });
-}
-exports.PatchBooking = PatchBooking;
-function DeleteBooking(req, res) {
-    return __awaiter(this, void 0, void 0, function* () {
-    });
-}
-exports.DeleteBooking = DeleteBooking;
+exports.PostBooking = void 0;
+const client_dynamodb_1 = require("@aws-sdk/client-dynamodb");
+const imports_1 = require("./imports");
+const tableName = "MyMusicDepot";
 function PostBooking(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
+        const data = yield req.body;
+        const pk = req.url;
+        const putCommand = {
+            TableName: tableName,
+            Item: {
+                PartitionKey: { S: pk },
+                SortKey: { S: data.SortKey },
+                bkTime: { S: data.bkTime },
+                bkAuthor: { S: data.bkAuthor },
+                bkNotes: { S: data.bkNotes },
+            },
+        };
+        yield imports_1.client.send(new client_dynamodb_1.PutItemCommand(putCommand));
+        res.status(200).json({ message: "OK" });
     });
 }
 exports.PostBooking = PostBooking;

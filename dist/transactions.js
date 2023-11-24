@@ -9,29 +9,30 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PostTransaction = exports.DeleteTransaction = exports.PatchTransaction = exports.PutTransaction = exports.GetTransaction = void 0;
-function GetTransaction(req, res) {
-    return __awaiter(this, void 0, void 0, function* () {
-    });
-}
-exports.GetTransaction = GetTransaction;
-function PutTransaction(req, res) {
-    return __awaiter(this, void 0, void 0, function* () {
-    });
-}
-exports.PutTransaction = PutTransaction;
-function PatchTransaction(req, res) {
-    return __awaiter(this, void 0, void 0, function* () {
-    });
-}
-exports.PatchTransaction = PatchTransaction;
-function DeleteTransaction(req, res) {
-    return __awaiter(this, void 0, void 0, function* () {
-    });
-}
-exports.DeleteTransaction = DeleteTransaction;
+exports.PostTransaction = void 0;
+const client_dynamodb_1 = require("@aws-sdk/client-dynamodb");
+const imports_1 = require("./imports");
+const tabName = "MyMusicDepot";
 function PostTransaction(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
+        const data = yield req.body;
+        const pk = req.url;
+        const putCommand = {
+            TableName: tabName,
+            Item: {
+                PartitionKey: { S: pk },
+                SortKey: { S: data.SortKey },
+                trClient: { S: data.trClient },
+                trInstructor: { S: data.trInstructor },
+                trAuthor: { S: data.trAuthor },
+                trStatus: { BOOL: data.trStatus },
+                trAmount: { N: data.trAmount },
+                trDirection: { S: data.trDirection },
+                trNotees: { S: data.trNotes }
+            },
+        };
+        yield imports_1.client.send(new client_dynamodb_1.PutItemCommand(putCommand));
+        res.status(200).json({ message: "OK" });
     });
 }
 exports.PostTransaction = PostTransaction;

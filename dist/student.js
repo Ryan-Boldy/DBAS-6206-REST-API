@@ -9,29 +9,29 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PostStudent = exports.DeleteStudent = exports.PatchStudent = exports.PutStudent = exports.GetStudent = void 0;
-function GetStudent(req, res) {
-    return __awaiter(this, void 0, void 0, function* () {
-    });
-}
-exports.GetStudent = GetStudent;
-function PutStudent(req, res) {
-    return __awaiter(this, void 0, void 0, function* () {
-    });
-}
-exports.PutStudent = PutStudent;
-function PatchStudent(req, res) {
-    return __awaiter(this, void 0, void 0, function* () {
-    });
-}
-exports.PatchStudent = PatchStudent;
-function DeleteStudent(req, res) {
-    return __awaiter(this, void 0, void 0, function* () {
-    });
-}
-exports.DeleteStudent = DeleteStudent;
+exports.PostStudent = void 0;
+const client_dynamodb_1 = require("@aws-sdk/client-dynamodb");
+const imports_1 = require("./imports");
+const tabName = "MyMusicDepot";
 function PostStudent(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
+        const data = yield req.body;
+        const pk = req.url;
+        const putCommand = {
+            TableName: tabName,
+            Item: {
+                PartitionKey: { S: pk },
+                SortKey: { S: data.SortKey },
+                stFirstName: { S: data.stFirstName },
+                stLastName: { S: data.stLastName },
+                stClasses: { L: data.stClasses },
+                stClient: { S: data.stClient },
+                stAuthor: { S: data.stAuthor },
+                stNotes: { S: data.stNotes }
+            },
+        };
+        yield imports_1.client.send(new client_dynamodb_1.PutItemCommand(putCommand));
+        res.status(200).json({ message: "OK" });
     });
 }
 exports.PostStudent = PostStudent;

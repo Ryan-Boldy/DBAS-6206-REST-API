@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Populate = exports.Delete = exports.Get = void 0;
+exports.Populate = exports.Update = exports.Delete = exports.Get = void 0;
 const client_dynamodb_1 = require("@aws-sdk/client-dynamodb");
 const util_dynamodb_1 = require("@aws-sdk/util-dynamodb");
 const imports_1 = require("./imports");
@@ -39,6 +39,38 @@ function Delete(pk, sk) {
     });
 }
 exports.Delete = Delete;
+function Update(data, pk) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const updateExpressionParts = [];
+        const expressionAttributeValues = {};
+        // Iterate over data properties and build the update expression
+        Object.entries(data).forEach(([key, value]) => {
+            if (value !== null && value !== undefined && key !== "SortKey") {
+                const expressionKey = `${key}`;
+                const expressionValue = `:${key}`;
+                updateExpressionParts.push(`${expressionKey} = ${expressionValue}`);
+                //expressionAttributeValues[expressionKey] = key;
+                expressionAttributeValues[expressionValue] = value;
+            }
+        });
+        console.log(data);
+        console.log(expressionAttributeValues);
+        console.log(updateExpressionParts.join(", "));
+        const updateCommand = {
+            TableName: "MyMusicDepot",
+            Key: {
+                PartitionKey: { S: pk },
+                SortKey: { S: data.SortKey }
+            },
+            UpdateExpression: `SET ${updateExpressionParts.join(", ")}`,
+            ExpressionAttributeValues: (0, util_dynamodb_1.marshall)(expressionAttributeValues),
+            ReturnValues: "ALL_NEW",
+        };
+        console.log(updateCommand);
+        return yield imports_1.client.send(new client_dynamodb_1.UpdateItemCommand(updateCommand));
+    });
+}
+exports.Update = Update;
 function Populate(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
         function Execute(putParams) {

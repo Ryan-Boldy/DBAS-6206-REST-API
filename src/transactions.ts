@@ -14,9 +14,9 @@ export async function PostTransaction(req: Request, res: Response) {
             SortKey: { S: data.SortKey },
             trClient: { S: data.trClient },
             trInstructor: { S: data.trInstructor },
-            trAuthor: { L: data.trAuthor },
-            trStatus: { S: data.trStatus },
-            trAmount: { S: data.trAmount },
+            trAuthor: { S: data.trAuthor },
+            trStatus: { BOOL: data.trStatus },
+            trAmount: { N: data.trAmount },
             trDirection: { S: data.trDirection },
             trNotees: {S: data.trNotes}
         },

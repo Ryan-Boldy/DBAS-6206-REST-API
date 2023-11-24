@@ -1,8 +1,6 @@
 import { DynamoDBClient, PutItemCommand, UpdateItemCommand } from "@aws-sdk/client-dynamodb";
 import { Delete, Get, Update } from "./functions";
-import { client } from "./imports";
 import { Response, Request } from "express";
-import { unmarshall, marshall } from "@aws-sdk/util-dynamodb";
 
 export async function SharedGet(req:Request, res:Response) {
     const pk = req.url;

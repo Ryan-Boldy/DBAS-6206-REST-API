@@ -9,29 +9,30 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PostClient = exports.DeleteClient = exports.PatchClient = exports.PutClient = exports.GetClient = void 0;
-function GetClient(req, res) {
-    return __awaiter(this, void 0, void 0, function* () {
-    });
-}
-exports.GetClient = GetClient;
-function PutClient(req, res) {
-    return __awaiter(this, void 0, void 0, function* () {
-    });
-}
-exports.PutClient = PutClient;
-function PatchClient(req, res) {
-    return __awaiter(this, void 0, void 0, function* () {
-    });
-}
-exports.PatchClient = PatchClient;
-function DeleteClient(req, res) {
-    return __awaiter(this, void 0, void 0, function* () {
-    });
-}
-exports.DeleteClient = DeleteClient;
+exports.PostClient = void 0;
+const client_dynamodb_1 = require("@aws-sdk/client-dynamodb");
+const imports_1 = require("./imports");
+const tabName = "MyMusicDepot";
 function PostClient(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
+        const data = yield req.body;
+        const pk = req.url;
+        const putCommand = {
+            TableName: tabName,
+            Item: {
+                PartitionKey: { S: pk },
+                SortKey: { S: data.SortKey },
+                clTransactions: { L: data.clTransactions },
+                clStudents: { L: data.clStudents },
+                clFirstName: { S: data.clFirstName },
+                clLastName: { S: data.clLastName },
+                clAuthor: { S: data.clAuthor },
+                clNotes: { S: data.clNotes },
+                clBalance: { N: data.clBalance }
+            },
+        };
+        yield imports_1.client.send(new client_dynamodb_1.PutItemCommand(putCommand));
+        res.status(200).json({ message: "OK" });
     });
 }
 exports.PostClient = PostClient;
