@@ -1,0 +1,12 @@
+{"PartitionKey": "Booking", "SortKey": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq", "bkClass": "c1a2b3c", "bkTime": "2023-12-04T10:00:00", "Author": "AliceSmith", "bkNotes": "Reserved for workshop", "bkRoom": "Room101"},
+{"PartitionKey": "Booking", "SortKey": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq", "bkClass": "c2a2b3c", "bkTime": "2023-12-05T14:30:00", "Author": "BobJohnson", "bkNotes": "Team meeting", "bkRoom": "Room202"},
+{"PartitionKey": "Booking", "SortKey": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq", "bkClass": "c3a2b3c", "bkTime": "2023-12-06T11:45:00", "Author": "CharlieBrown", "bkNotes": "Client presentation", "bkRoom": "Room303"},
+{"PartitionKey": "Booking", "SortKey": "4a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq", "bkClass": "c4a2b3c", "bkTime": "2023-12-07T09:00:00", "Author": "DianaMiller", "bkNotes": "Training session", "bkRoom": "Room404"},
+{"PartitionKey": "Booking", "SortKey": "5a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq", "bkClass": "c5a2b3c", "bkTime": "2023-12-08T16:15:00", "Author": "EdwardDavis", "bkNotes": "Networking event", "bkRoom": "Room505"},
+{"PartitionKey": "Booking", "SortKey": "6a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq", "bkClass": "c6a2b3c", "bkTime": "2023-12-09T13:30:00", "Author": "FionaTaylor", "bkNotes": "Lecture series", "bkRoom": "Room606"},
+{"PartitionKey": "Booking", "SortKey": "7a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq", "bkClass": "c7a2b3c", "bkTime": "2023-12-10T10:45:00", "Author": "GeorgeClark", "bkNotes": "Product launch", "bkRoom": "Room707"},
+{"PartitionKey": "Booking", "SortKey": "8a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq", "bkClass": "c8a2b3c", "bkTime": "2023-12-11T14:00:00", "Author": "HelenBaker", "bkNotes": "Board meeting", "bkRoom": "Room808"},
+{"PartitionKey": "Booking", "SortKey": "9a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq", "bkClass": "c9a2b3c", "bkTime": "2023-12-12T12:15:00", "Author": "IvanGonzalez", "bkNotes": "Seminar on AI", "bkRoom": "Room909"},
+{"PartitionKey": "Booking", "SortKey": "10a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq", "bkClass": "c10a2b3c", "bkTime": "2023-12-13T09:30:00", "Author": "JessicaLee", "bkNotes": "Workshop on Web Development", "bkRoom": "Room1010"}
+
+

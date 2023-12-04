@@ -1,0 +1,627 @@
+{
+    "data:": [
+        {
+            "PartitionKey": "/staff",
+            "SortKey": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "RCON",
+            "staffPass": "password123",
+            "staffApproved": true,
+            "staffFirstName": "John",
+            "staffLastName": "Doe"
+        },
+        {
+            "PartitionKey": "/staff",
+            "SortKey": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "RCON",
+            "staffPass": "pass456",
+            "staffApproved": false,
+            "staffFirstName": "Jane",
+            "staffLastName": "Doe"
+        },
+        {
+            "PartitionKey": "/staff",
+            "SortKey": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "RCON",
+            "staffPass": "securePass",
+            "staffApproved": true,
+            "staffFirstName": "Bob",
+            "staffLastName": "Smith"
+        },
+        {
+            "PartitionKey": "/clients",
+            "SortKey": "1b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "clBalance": 5000.00,
+            "clFirstName": "Alice",
+            "clLastName": "Smith",
+            "clTransactions": [
+                "",
+                ""
+            ],
+            "clStudents": [
+                "s7g8h9i",
+                "s10jk11l"
+            ],
+            "clNotes": "Pending negotiation"
+        },
+        {
+            "PartitionKey": "/clients",
+            "SortKey": "2b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "clBalance": 3000.50,
+            "clFirstName": "Bob",
+            "clLastName": "Johnson",
+            "clTransactions": [
+                "",
+                ""
+            ],
+            "clStudents": [
+                "s8g8h9i",
+                "s11jk11l"
+            ],
+            "clNotes": "Must talk with them Re. student behavior"
+        },
+        {
+            "PartitionKey": "/clients",
+            "SortKey": "3b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "clBalance": 7500.75,
+            "clFirstName": "Charlie",
+            "clLastName": "Brown",
+            "clTransactions": [
+                "",
+                ""
+            ],
+            "clStudents": [
+                "s9g8h9i",
+                "s12jk11l"
+            ],
+            "clNotes": "Need to talk Re. student progression"
+        },
+        {
+            "PartitionKey": "/clients",
+            "SortKey": "4b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "clBalance": 10000.25,
+            "clFirstName": "Diana",
+            "clLastName": "Miller",
+            "clTransactions": [
+                "",
+                ""
+            ],
+            "clStudents": [
+                "s10g8h9i",
+                "s1jk11l"
+            ],
+            "clNotes": ""
+        },
+        {
+            "PartitionKey": "/clients",
+            "SortKey": "5b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "clBalance": 1200.80,
+            "clFirstName": "Edward",
+            "clLastName": "Davis",
+            "clTransactions": [
+                "",
+                ""
+            ],
+            "clStudents": [
+                "s11g8h9i",
+                "s2jk11l"
+            ],
+            "clNotes": "Leaving next week w/ students"
+        },
+        {
+            "PartitionKey": "/clients",
+            "SortKey": "6b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "clBalance": 8500.30,
+            "clFirstName": "Fiona",
+            "clLastName": "Taylor",
+            "clTransactions": [
+                "",
+                ""
+            ],
+            "clStudents": [
+                "s12g8h9i",
+                "s3jk11l"
+            ],
+            "clNotes": "Owed free lesson"
+        },
+        {
+            "PartitionKey": "/clients",
+            "SortKey": "7b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "clBalance": 6000.45,
+            "clFirstName": "George",
+            "clLastName": "Clark",
+            "clTransactions": [
+                "",
+                ""
+            ],
+            "clStudents": [
+                "s1g8h9i",
+                "s4jk11l"
+            ],
+            "clNotes": "Meet regarding Client behaviour"
+        },
+        {
+            "PartitionKey": "/clients",
+            "SortKey": "8b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "clBalance": 4500.60,
+            "clFirstName": "Helen",
+            "clLastName": "Baker",
+            "clTransactions": [
+                "",
+                ""
+            ],
+            "clStudents": [
+                "s2g8h9i",
+                "s5jk11l"
+            ],
+            "clNotes": ""
+        },
+        {
+            "PartitionKey": "/clients",
+            "SortKey": "9b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "clBalance": 9200.20,
+            "clFirstName": "Ivan",
+            "clLastName": "Gonzalez",
+            "clTransactions": [
+                "",
+                ""
+            ],
+            "clStudents": [
+                "s3g8h9i",
+                "s6jk11l"
+            ],
+            "clNotes": ""
+        },
+        {
+            "PartitionKey": "/clients",
+            "SortKey": "0b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "clBalance": 2000.00,
+            "clFirstName": "Jessica",
+            "clLastName": "Lee",
+            "clTransactions": [
+                "",
+                ""
+            ],
+            "clStudents": [
+                "s4g8h9i",
+                "s7jk11l"
+            ],
+            "clNotes": ""
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "1c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "Emma",
+            "stLastName": "Johnson",
+            "stClient": "1b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Excellent student",
+            "stClasses": [
+                "1e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "2c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "James",
+            "stLastName": "Miller",
+            "stClient": "1b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Needs improvement in Math",
+            "stClasses": [
+                "1e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "3c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "Sophia",
+            "stLastName": "Taylor",
+            "stClient": "2b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Athletic and energetic",
+            "stClasses": [
+                "2e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "4c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "Liam",
+            "stLastName": "Clark",
+            "stClient": "2b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Enjoys reading",
+            "stClasses": [
+                "2e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "5c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "Olivia",
+            "stLastName": "Baker",
+            "stClient": "3b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Artistic talent",
+            "stClasses": [
+                "3e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "6c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "Noah",
+            "stLastName": "Gonzalez",
+            "stClient": "3b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Interested in science",
+            "stClasses": [
+                "3e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "7c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "Isabella",
+            "stLastName": "Lee",
+            "stClient": "4b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Participates in sports",
+            "stClasses": [
+                "4e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "6e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "8c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "Mason",
+            "stLastName": "Gonzalez",
+            "stClient": "4b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Enthusiastic learner",
+            "stClasses": [
+                "4e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "6e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "9c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "Ava",
+            "stLastName": "Taylor",
+            "stClient": "5b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Good communicator",
+            "stClasses": [
+                "6e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "8e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "0c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "Ethan",
+            "stLastName": "Baker",
+            "stClient": "5b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Passionate about history",
+            "stClasses": [
+                "6e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "8e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "1d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "Sophie",
+            "stLastName": "Johnson",
+            "stClient": "6b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Enjoys mathematics",
+            "stClasses": [
+                "6e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "8e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "2d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "Logan",
+            "stLastName": "Miller",
+            "stClient": "6b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Tech-savvy",
+            "stClasses": [
+                "6e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "8e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "3d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "Avery",
+            "stLastName": "Clark",
+            "stClient": "7b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Loves outdoor activities",
+            "stClasses": [
+                "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "4d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "Jackson",
+            "stLastName": "Baker",
+            "stClient": "7b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Creative thinker",
+            "stClasses": [
+                "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "5d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "Harper",
+            "stLastName": "Gonzalez",
+            "stClient": "8b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Enjoys music",
+            "stClasses": [
+                "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "6d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "Michael",
+            "stLastName": "Lee",
+            "stClient": "8b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Passionate about science",
+            "stClasses": [
+                "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "7d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "Abigail",
+            "stLastName": "Gonzalez",
+            "stClient": "9b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Loves literature",
+            "stClasses": [
+                "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "8d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "Daniel",
+            "stLastName": "Taylor",
+            "stClient": "9b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Interested in history",
+            "stClasses": [
+                "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "9d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "Sofia",
+            "stLastName": "Clark",
+            "stClient": "0b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Avid reader",
+            "stClasses": [
+                "8e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/students",
+            "SortKey": "0d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stFirstName": "Logan",
+            "stLastName": "Johnson",
+            "stClient": "0b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "stNotes": "Tech enthusiast",
+            "stClasses": [
+                "8e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/classes",
+            "SortKey": "1e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classNotes": "Small Class"
+        },
+        {
+            "PartitionKey": "/classes",
+            "SortKey": "2e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classNotes": "Small Class"
+        },
+        {
+            "PartitionKey": "/classes",
+            "SortKey": "3e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classNotes": "Small Class"
+        },
+        {
+            "PartitionKey": "/classes",
+            "SortKey": "4e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classNotes": "Small Class"
+        },
+        {
+            "PartitionKey": "/classes",
+            "SortKey": "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classInstructor": "3f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classNotes": "Orchestra Class"
+        },
+        {
+            "PartitionKey": "/classes",
+            "SortKey": "6e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classInstructor": "3f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classNotes": "Orchestra Class"
+        },
+        {
+            "PartitionKey": "/classes",
+            "SortKey": "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classInstructor": "3f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classNotes": "Orchestra Class"
+        },
+        {
+            "PartitionKey": "/classes",
+            "SortKey": "8e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classInstructor": "3f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classNotes": "Orchestra Class"
+        },
+        {
+            "PartitionKey": "/classes",
+            "SortKey": "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classNotes": "Piano Class"
+        },
+        {
+            "PartitionKey": "/classes",
+            "SortKey": "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "classNotes": "Piano Class"
+        },
+        {
+            "PartitionKey": "/instructors",
+            "SortKey": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "inFirstName": "John",
+            "inLastName": "Doe",
+            "inNotes": "Piano Instructor",
+            "inTransactions": [
+                "t1a2b3c",
+                "t4d5e6f"
+            ],
+            "inClasses": [
+                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/instructors",
+            "SortKey": "2f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "inFirstName": "Jane",
+            "inLastName": "Smith",
+            "inNotes": "Soloist Instructor",
+            "inTransactions": [
+                "t2a2b3c",
+                "t5d5e6f"
+            ],
+            "inClasses": [
+                "4e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "3e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "2e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "1e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/instructors",
+            "SortKey": "3f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "inFirstName": "Sarah",
+            "inLastName": "Taylor",
+            "inNotes": "Orchestra Instructor",
+            "inTransactions": [
+                "t3a2b3c",
+                "t6d5e6f"
+            ],
+            "inClasses": [
+                "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "8e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "6e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
+        },
+        {
+            "PartitionKey": "/room",
+            "SortKey": "Piano_1",
+            "rmMax": 30
+        },
+        {
+            "PartitionKey": "/room",
+            "SortKey": "Piano_2",
+            "rmMax": 30
+        },
+        {
+            "PartitionKey": "/room",
+            "SortKey": "Large",
+            "rmMax": 30
+        },
+        {
+            "PartitionKey": "/room",
+            "SortKey": "Small_1",
+            "rmMax": 4
+        },
+        {
+            "PartitionKey": "/room",
+            "SortKey": "Small_2",
+            "rmMax": 4
+        },
+        {
+            "PartitionKey": "/room",
+            "SortKey": "Small_3",
+            "rmMax": 4
+        },
+        {
+            "PartitionKey": "/room",
+            "SortKey": "Small_4",
+            "rmMax": 4
+        }
+    ]
+}

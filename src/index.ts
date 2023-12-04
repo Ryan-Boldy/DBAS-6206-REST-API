@@ -8,6 +8,9 @@ import { PostInstructor } from './instructors';
 import { PostStudent} from './student';
 import { PostTransaction } from './transactions';
 import { SharedDelete, SharedGet, SharedUpdate } from './shared';
+import { init } from './init';
+
+init();
 
 const app = express();
 const port = 3005;
@@ -33,31 +36,31 @@ app.delete('/class', SharedDelete);
 app.post('/class', PostClass);
 
 //Booking CRUD
-app.get('/booking', SharedGet);
-app.patch('/booking', SharedUpdate);
-app.delete('/booking', SharedDelete);
-app.post('/booking', PostBooking);
+app.get('/bookings', SharedGet);
+app.patch('/bookings', SharedUpdate);
+app.delete('/bookings', SharedDelete);
+app.post('/bookings', PostBooking);
 
 //Clients CRUD
-app.get('/client', SharedGet);
-app.patch('/client', SharedUpdate);
-app.delete('/client', SharedDelete);
-app.post('/client', PostClient);
+app.get('/clients', SharedGet);
+app.patch('/clients', SharedUpdate);
+app.delete('/clients', SharedDelete);
+app.post('/clients', PostClient);
 
 //Instructors CRUD
-app.get('/instructor', SharedGet);
-app.patch('/instructor', SharedUpdate);
-app.delete('/instructor', SharedDelete);
-app.post('/instructor', PostInstructor);
+app.get('/instructors', SharedGet);
+app.patch('/instructors', SharedUpdate);
+app.delete('/instructors', SharedDelete);
+app.post('/instructors', PostInstructor);
 
 //Students CRUD
-app.get('/student', SharedGet);
-app.patch('/student', SharedUpdate);
-app.delete('/student', SharedDelete);
-app.post('/student', PostStudent);
+app.get('/students', SharedGet);
+app.patch('/students', SharedUpdate);
+app.delete('/students', SharedDelete);
+app.post('/students', PostStudent);
 
 //Transactions CRUD
-app.get('/transaction', SharedGet);
-app.patch('/transaction', SharedUpdate);
-app.delete('/transaction', SharedDelete);
-app.post('/transaction', PostTransaction);
+app.get('/transactions', SharedGet);
+app.patch('/transactions', SharedUpdate);
+app.delete('/transactions', SharedDelete);
+app.post('/transactions', PostTransaction);

@@ -5,6 +5,7 @@ import { Response, Request } from "express";
 export async function SharedGet(req:Request, res:Response) {
     const pk = req.url;
     const result = await Get(pk);
+    console.log(pk);
     res.status(200).json(result.Items);
 }
 
