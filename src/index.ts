@@ -9,10 +9,21 @@ import { PostStudent} from './student';
 import { PostTransaction } from './transactions';
 import { SharedDelete, SharedGet, SharedUpdate } from './shared';
 import { init } from './init';
+import cors from 'cors';
 
 init();
 
+
 const app = express();
+
+const corsOptions = {
+    origin: 'http://localhost:5173',
+    optionsSuccessStatus: 200,
+}
+
+app.use(cors(corsOptions));
+
+
 const port = 3005;
 
 app.use(express.json());
@@ -64,3 +75,5 @@ app.get('/transactions', SharedGet);
 app.patch('/transactions', SharedUpdate);
 app.delete('/transactions', SharedDelete);
 app.post('/transactions', PostTransaction);
+
+app.get('/rooms', SharedGet);

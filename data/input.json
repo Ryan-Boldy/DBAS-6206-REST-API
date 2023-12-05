@@ -467,70 +467,70 @@
             ]
         },
         {
-            "PartitionKey": "/classes",
+            "PartitionKey": "/class",
             "SortKey": "1e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classNotes": "Small Class"
         },
         {
-            "PartitionKey": "/classes",
+            "PartitionKey": "/class",
             "SortKey": "2e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classNotes": "Small Class"
         },
         {
-            "PartitionKey": "/classes",
+            "PartitionKey": "/class",
             "SortKey": "3e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classNotes": "Small Class"
         },
         {
-            "PartitionKey": "/classes",
+            "PartitionKey": "/class",
             "SortKey": "4e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classNotes": "Small Class"
         },
         {
-            "PartitionKey": "/classes",
+            "PartitionKey": "/class",
             "SortKey": "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "3f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classNotes": "Orchestra Class"
         },
         {
-            "PartitionKey": "/classes",
+            "PartitionKey": "/class",
             "SortKey": "6e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "3f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classNotes": "Orchestra Class"
         },
         {
-            "PartitionKey": "/classes",
+            "PartitionKey": "/class",
             "SortKey": "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "3f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classNotes": "Orchestra Class"
         },
         {
-            "PartitionKey": "/classes",
+            "PartitionKey": "/class",
             "SortKey": "8e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "3f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classNotes": "Orchestra Class"
         },
         {
-            "PartitionKey": "/classes",
+            "PartitionKey": "/class",
             "SortKey": "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classNotes": "Piano Class"
         },
         {
-            "PartitionKey": "/classes",
+            "PartitionKey": "/class",
             "SortKey": "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
@@ -589,37 +589,37 @@
             ]
         },
         {
-            "PartitionKey": "/room",
+            "PartitionKey": "/rooms",
             "SortKey": "Piano_1",
             "rmMax": 30
         },
         {
-            "PartitionKey": "/room",
+            "PartitionKey": "/rooms",
             "SortKey": "Piano_2",
             "rmMax": 30
         },
         {
-            "PartitionKey": "/room",
+            "PartitionKey": "/rooms",
             "SortKey": "Large",
             "rmMax": 30
         },
         {
-            "PartitionKey": "/room",
+            "PartitionKey": "/rooms",
             "SortKey": "Small_1",
             "rmMax": 4
         },
         {
-            "PartitionKey": "/room",
+            "PartitionKey": "/rooms",
             "SortKey": "Small_2",
             "rmMax": 4
         },
         {
-            "PartitionKey": "/room",
+            "PartitionKey": "/rooms",
             "SortKey": "Small_3",
             "rmMax": 4
         },
         {
-            "PartitionKey": "/room",
+            "PartitionKey": "/rooms",
             "SortKey": "Small_4",
             "rmMax": 4
         }
