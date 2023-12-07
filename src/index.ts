@@ -1,4 +1,4 @@
-import express, { query } from 'express';
+import express, { Request, Response, query } from 'express';
 import { Populate } from './functions';
 import { PostStaff } from './staff';
 import { PostClass} from './classes';
@@ -11,6 +11,9 @@ import { SharedDelete, SharedGet, SharedUpdate } from './shared';
 import { init } from './init';
 import cors from 'cors';
 import { PostRoom } from './rooms';
+import { client } from './imports';
+import { GetItemCommand } from '@aws-sdk/client-dynamodb';
+import { marshall } from '@aws-sdk/util-dynamodb';
 
 init();
 
@@ -78,4 +81,36 @@ app.delete('/transactions', SharedDelete);
 app.post('/transactions', PostTransaction);
 
 app.get('/rooms', SharedGet);
-app.post('/rooms', PostRoom)
+app.post('/rooms', PostRoom);
+
+
+app.post('/auth', async (req: Request, res: Response) => {
+    try {
+        const data = await req.body;
+        console.log("BODY", data);
+        const getCommand = {
+            TableName: "MyMusicDepot",
+            Key: marshall({
+                PartitionKey: "/staff",
+                SortKey: data.SortKey,
+            }, {removeUndefinedValues: true})
+        };
+        console.log(getCommand);
+        const r = await client.send(new GetItemCommand(getCommand));
+        console.log(r);
+        console.log(r.Item);
+        if(r.Item) {
+            if(r.Item.staffPass.S === data.password) {
+                res.status(200).json({ message: "OK" });
+            } else {
+                res.status(400).json({ message: "BAD" });
+            }
+        } else {
+            res.status(400).json({ message: "BAD" });
+        }
+    } catch(e) {
+        res.status(500).json({ message: "BAD" });
+    }
+
+
+});

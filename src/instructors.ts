@@ -14,10 +14,8 @@ export async function PostInstructor(req: Request, res: Response) {
         Item: marshall({
             PartitionKey: pk,
             SortKey: data.SortKey,
-            inClasses: data.inClasses,
             inFirstName: data.inFirstName,
             inLastName: data.inLastName,
-            inTransactions:  data.inTransactions,
             Author: data.Author,
             inNotes: data.inNotes
         }),

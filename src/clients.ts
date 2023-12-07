@@ -14,7 +14,6 @@ export async function PostClient(req: Request, res: Response) {
         Item: marshall({
             PartitionKey: pk,
             SortKey: data.SortKey,
-            clTransactions: data.clTransactions,
             clStudents: data.clStudents,
             clFirstName: data.clFirstName,
             clLastName: data.clLastName,

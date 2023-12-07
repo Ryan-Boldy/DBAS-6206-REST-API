@@ -18,7 +18,8 @@ export async function PostClass(req: Request, res: Response) {
             classInstructor: data.classInstructor,
             students: data.students,
             Author: data.Author ,
-            classNotes: data.classNotes ,
+            classNotes: data.classNotes,
+            clName: data.clName,
         }),
     };
     console.log(putCommand);
