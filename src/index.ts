@@ -10,6 +10,7 @@ import { PostTransaction } from './transactions';
 import { SharedDelete, SharedGet, SharedUpdate } from './shared';
 import { init } from './init';
 import cors from 'cors';
+import { PostRoom } from './rooms';
 
 init();
 
@@ -77,3 +78,4 @@ app.delete('/transactions', SharedDelete);
 app.post('/transactions', PostTransaction);
 
 app.get('/rooms', SharedGet);
+app.post('/rooms', PostRoom)

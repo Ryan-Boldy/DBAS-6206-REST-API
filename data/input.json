@@ -7,7 +7,8 @@
             "staffPass": "password123",
             "staffApproved": true,
             "staffFirstName": "John",
-            "staffLastName": "Doe"
+            "staffLastName": "Doe",
+            "staffUser": "Staff1"
         },
         {
             "PartitionKey": "/staff",
@@ -16,7 +17,8 @@
             "staffPass": "pass456",
             "staffApproved": false,
             "staffFirstName": "Jane",
-            "staffLastName": "Doe"
+            "staffLastName": "Doe",
+            "staffUser": "Staff2"
         },
         {
             "PartitionKey": "/staff",
@@ -25,7 +27,8 @@
             "staffPass": "securePass",
             "staffApproved": true,
             "staffFirstName": "Bob",
-            "staffLastName": "Smith"
+            "staffLastName": "Smith",
+            "staffUser": "Staff3"
         },
         {
             "PartitionKey": "/clients",

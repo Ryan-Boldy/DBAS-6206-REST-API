@@ -1,6 +1,7 @@
 import { PutItemCommand } from "@aws-sdk/client-dynamodb";
 import { client } from "./imports";
 import { Response, Request } from "express";
+import { marshall } from "@aws-sdk/util-dynamodb";
 
 
 const tabName = "MyMusicDepot";
@@ -10,18 +11,18 @@ export async function PostInstructor(req: Request, res: Response) {
     const pk = req.url;
     const putCommand = {
         TableName: tabName,
-        Item: {
-            PartitionKey: { S: pk },
-            SortKey: { S: data.SortKey },
-            inClasses: { L: data.inClasses },
-            inFirstName: { S: data.inFirstName },
-            inLastName: { S: data.inLastName },
-            inTransactions: { L: data.inTransactions },
-            inAuthor: { S: data.inAuthor },
-            inNotes: { S: data.inNotes }
-        },
+        Item: marshall({
+            PartitionKey: pk,
+            SortKey: data.SortKey,
+            inClasses: data.inClasses,
+            inFirstName: data.inFirstName,
+            inLastName: data.inLastName,
+            inTransactions:  data.inTransactions,
+            Author: data.Author,
+            inNotes: data.inNotes
+        }),
     };
-
+    console.log(putCommand);
     await client.send(new PutItemCommand(putCommand));
     res.status(200).json({ message: "OK" });
 }

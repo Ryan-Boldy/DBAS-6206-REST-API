@@ -3,9 +3,10 @@ import { client } from "./imports";
 import { Response, Request } from "express";
 import { marshall } from "@aws-sdk/util-dynamodb";
 
+
 const tabName = "MyMusicDepot";
 
-export async function PostStudent(req: Request, res: Response) {
+export async function PostRoom(req: Request, res: Response) {
     const data = await req.body;
     const pk = req.url;
     const putCommand = {
@@ -13,12 +14,7 @@ export async function PostStudent(req: Request, res: Response) {
         Item: marshall({
             PartitionKey: pk,
             SortKey: data.SortKey,
-            stFirstName: data.stFirstName,
-            stLastName: data.stLastName,
-            stClasses: data.stClasses,
-            stClient: data.stClient,
-            Author: data.Author,
-            stNotes: data.stNotes
+            rmMax: data.rmMax,
         }),
     };
     console.log(putCommand);
