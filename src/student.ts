@@ -8,6 +8,7 @@ const tabName = "MyMusicDepot";
 export async function PostStudent(req: Request, res: Response) {
     const data = await req.body;
     const pk = req.url;
+    console.log(data);
     const putCommand = {
         TableName: tabName,
         Item: marshall({
