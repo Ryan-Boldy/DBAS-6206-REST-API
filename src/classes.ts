@@ -16,6 +16,7 @@ export async function PostClass(req: Request, res: Response) {
             PartitionKey: pk,
             SortKey: data.SortKey,
             classInstructor: data.classInstructor,
+            students: data.students,
             Author: data.Author ,
             classNotes: data.classNotes ,
         }),

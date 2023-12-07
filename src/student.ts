@@ -15,7 +15,6 @@ export async function PostStudent(req: Request, res: Response) {
             SortKey: data.SortKey,
             stFirstName: data.stFirstName,
             stLastName: data.stLastName,
-            stClasses: data.stClasses,
             stClient: data.stClient,
             Author: data.Author,
             stNotes: data.stNotes

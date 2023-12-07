@@ -207,12 +207,7 @@
             "stFirstName": "Emma",
             "stLastName": "Johnson",
             "stClient": "1b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Excellent student",
-            "stClasses": [
-                "1e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Excellent student"
         },
         {
             "PartitionKey": "/students",
@@ -221,12 +216,7 @@
             "stFirstName": "James",
             "stLastName": "Miller",
             "stClient": "1b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Needs improvement",
-            "stClasses": [
-                "1e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Needs improvement"
         },
         {
             "PartitionKey": "/students",
@@ -235,12 +225,7 @@
             "stFirstName": "Sophia",
             "stLastName": "Taylor",
             "stClient": "2b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Uninterested",
-            "stClasses": [
-                "2e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Uninterested"
         },
         {
             "PartitionKey": "/students",
@@ -249,12 +234,7 @@
             "stFirstName": "Liam",
             "stLastName": "Clark",
             "stClient": "2b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Enjoys theory",
-            "stClasses": [
-                "2e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Enjoys theory"
         },
         {
             "PartitionKey": "/students",
@@ -263,12 +243,7 @@
             "stFirstName": "Olivia",
             "stLastName": "Baker",
             "stClient": "3b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Talented but not trained",
-            "stClasses": [
-                "3e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Talented but not trained"
         },
         {
             "PartitionKey": "/students",
@@ -277,12 +252,7 @@
             "stFirstName": "Noah",
             "stLastName": "Gonzalez",
             "stClient": "3b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Interested in many instruments",
-            "stClasses": [
-                "3e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Interested in many instruments"
         },
         {
             "PartitionKey": "/students",
@@ -291,12 +261,7 @@
             "stFirstName": "Isabella",
             "stLastName": "Lee",
             "stClient": "4b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Participates in extracirricular band",
-            "stClasses": [
-                "4e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "6e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Participates in extracirricular band"
         },
         {
             "PartitionKey": "/students",
@@ -305,12 +270,7 @@
             "stFirstName": "Mason",
             "stLastName": "Gonzalez",
             "stClient": "4b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Enthusiastic learner",
-            "stClasses": [
-                "4e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "6e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Enthusiastic learner"
         },
         {
             "PartitionKey": "/students",
@@ -319,12 +279,7 @@
             "stFirstName": "Ava",
             "stLastName": "Taylor",
             "stClient": "5b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Good communicator",
-            "stClasses": [
-                "6e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "8e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Good communicator"
         },
         {
             "PartitionKey": "/students",
@@ -333,11 +288,7 @@
             "stFirstName": "Ethan",
             "stLastName": "Baker",
             "stClient": "5b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Passionate about percussion",
-            "stClasses": [
-                "6e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "8e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Passionate about percussion"
         },
         {
             "PartitionKey": "/students",
@@ -346,11 +297,7 @@
             "stFirstName": "Sophie",
             "stLastName": "Johnson",
             "stClient": "6b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Enjoys thoery",
-            "stClasses": [
-                "6e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "8e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Enjoys thoery"
         },
         {
             "PartitionKey": "/students",
@@ -359,11 +306,7 @@
             "stFirstName": "Logan",
             "stLastName": "Miller",
             "stClient": "6b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Tech-savvy",
-            "stClasses": [
-                "6e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "8e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Tech-savvy"
         },
         {
             "PartitionKey": "/students",
@@ -372,11 +315,7 @@
             "stFirstName": "Avery",
             "stLastName": "Clark",
             "stClient": "7b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Loves outdoor performances",
-            "stClasses": [
-                "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Loves outdoor performances"
         },
         {
             "PartitionKey": "/students",
@@ -385,11 +324,7 @@
             "stFirstName": "Jackson",
             "stLastName": "Baker",
             "stClient": "7b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Creative thinker",
-            "stClasses": [
-                "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Creative thinker"
         },
         {
             "PartitionKey": "/students",
@@ -398,11 +333,7 @@
             "stFirstName": "Harper",
             "stLastName": "Gonzalez",
             "stClient": "8b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Enjoys orhcestral",
-            "stClasses": [
-                "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Enjoys orhcestral"
         },
         {
             "PartitionKey": "/students",
@@ -411,11 +342,7 @@
             "stFirstName": "Michael",
             "stLastName": "Lee",
             "stClient": "8b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Passionate about music psychology",
-            "stClasses": [
-                "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Passionate about music psychology"
         },
         {
             "PartitionKey": "/students",
@@ -424,11 +351,7 @@
             "stFirstName": "Abigail",
             "stLastName": "Gonzalez",
             "stClient": "9b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Loves music literature",
-            "stClasses": [
-                "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Loves music literature"
         },
         {
             "PartitionKey": "/students",
@@ -437,11 +360,7 @@
             "stFirstName": "Daniel",
             "stLastName": "Taylor",
             "stClient": "9b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Interested in music history",
-            "stClasses": [
-                "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Interested in music history"
         },
         {
             "PartitionKey": "/students",
@@ -450,11 +369,7 @@
             "stFirstName": "Sofia",
             "stLastName": "Clark",
             "stClient": "0b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Avid reader",
-            "stClasses": [
-                "8e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Avid reader"
         },
         {
             "PartitionKey": "/students",
@@ -463,81 +378,146 @@
             "stFirstName": "Logan",
             "stLastName": "Johnson",
             "stClient": "0b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Tech enthusiast",
-            "stClasses": [
-                "8e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-                "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
-            ]
+            "stNotes": "Tech enthusiast"
         },
         {
             "PartitionKey": "/class",
             "SortKey": "1e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "classNotes": "Small Class"
+            "classNotes": "Small Class",
+            "students": [
+                "1c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "2c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
         },
         {
             "PartitionKey": "/class",
             "SortKey": "2e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "classNotes": "Small Class"
+            "classNotes": "Small Class",
+            "students": [
+                "3c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "4c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
         },
         {
             "PartitionKey": "/class",
             "SortKey": "3e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "classNotes": "Small Class"
+            "classNotes": "Small Class",
+            "students": [
+                "5c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "6c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
         },
         {
             "PartitionKey": "/class",
             "SortKey": "4e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "classNotes": "Small Class"
+            "classNotes": "Small Class",
+            "students": [
+                "7c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "8c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
         },
         {
             "PartitionKey": "/class",
             "SortKey": "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "3f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "classNotes": "Orchestra Class"
+            "classNotes": "Orchestra Class",
+            "students": [
+                "1c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "2c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "3c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "4c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "5c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "6c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
         },
         {
             "PartitionKey": "/class",
             "SortKey": "6e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "3f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "classNotes": "Orchestra Class"
+            "classNotes": "Orchestra Class",
+            "students": [
+                "7c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "8c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "9c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "0c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "1d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "2d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
         },
         {
             "PartitionKey": "/class",
             "SortKey": "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "3f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "classNotes": "Orchestra Class"
+            "classNotes": "Orchestra Class",
+            "students": [
+                "3d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "4d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "5d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "6d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "7d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "8d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
         },
         {
             "PartitionKey": "/class",
             "SortKey": "8e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "3f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "classNotes": "Orchestra Class"
+            "classNotes": "Orchestra Class",
+            "students": [
+                "9c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "0c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "1d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "2d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "9d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "0d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
         },
         {
             "PartitionKey": "/class",
             "SortKey": "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "classNotes": "Piano Class"
+            "classNotes": "Piano Class",
+            "students": [
+                "3d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "4d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "5d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "6d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "7d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "8d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
         },
         {
             "PartitionKey": "/class",
             "SortKey": "0e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "classInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "classNotes": "Piano Class"
+            "classNotes": "Piano Class",
+            "students": [
+                "1c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "2c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "3c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "4c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "5c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "6c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "7c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "8c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "9c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "9d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "0d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+            ]
         },
         {
             "PartitionKey": "/instructors",
