@@ -14,10 +14,13 @@ export async function PostBooking(req: Request, res: Response) {
             PartitionKey: { S: pk },
             SortKey: { S: data.SortKey },
             bkTime: { S: data.bkTime },
-            bkAuthor: { S: data.bkAuthor },
+            buthor: { S: data.Author },
             bkNotes: { S: data.bkNotes },
+            bkRoom: {S: data.bkRoom},
+            bkClass: {S: data.bkClass}
         },
     };
+    console.log(putCommand);
     await client.send(new PutItemCommand(putCommand));
     res.status(200).json({ message: "OK"});
 }

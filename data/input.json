@@ -567,6 +567,33 @@
             "trStatus": false,
             "trAmount": -100.00,
             "trNotes": "Refund"
+        },
+        {
+            "PartitionKey": "/bookings",
+            "SortKey": "1h2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "bkTime": "2023-12-07T12:00:00-0500",
+            "bkAuthor": "Staff1",
+            "bkNotes": "Will be a loud class",
+            "bkRoom": "Large",
+            "bkClass": "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+        },
+        {
+            "PartitionKey": "/bookings",
+            "SortKey": "2h2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "bkTime": "2023-12-07T14:00:00-0500",
+            "bkAuthor": "Staff2",
+            "bkNotes": "Open class, no fees",
+            "bkRoom": "Piano_1",
+            "bkClass": "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
+        },
+        {
+            "PartitionKey": "/bookings",
+            "SortKey": "3h2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "bkTime": "2023-12-07T13:00:00-0500",
+            "bkAuthor": "Staff3",
+            "bkNotes": "Solo lesson.",
+            "bkRoom": "Small_1",
+            "bkClass": "1e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
         }
     ]
 }
