@@ -14,13 +14,13 @@ export async function PostTransaction(req: Request, res: Response) {
             SortKey: { S: data.SortKey },
             trClient: { S: data.trClient },
             trInstructor: { S: data.trInstructor },
-            trAuthor: { S: data.trAuthor },
+            Author: { S: data.Author },
             trStatus: { BOOL: data.trStatus },
             trAmount: { N: data.trAmount },
-            trDirection: { S: data.trDirection },
-            trNotees: {S: data.trNotes}
+            trNotes: {S: data.trNotes}
         },
     };
+    console.log(putCommand);
     await client.send(new PutItemCommand(putCommand));
     res.status(200).json({ message: "OK" });
 }

@@ -614,7 +614,6 @@
             "trInstructor": "2f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "trStatus": true,
             "trAmount": 250.00,
-            "trDrection": true,
             "trNotes": "Payment is very late."
         },
         {
@@ -625,7 +624,6 @@
             "trInstructor": "3f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "trStatus": true,
             "trAmount": 750.00,
-            "trDrection": true,
             "trNotes": "One month of essons"
         },
         {
@@ -636,7 +634,6 @@
             "trInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "trStatus": false,
             "trAmount": 500.00,
-            "trDrection": true,
             "trNotes": "Two weeks of lessons"
         },
         {
@@ -646,8 +643,7 @@
             "trClient": "7b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "trInstructor": "2f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
             "trStatus": false,
-            "trAmount": 100.00,
-            "trDrection": false,
+            "trAmount": -100.00,
             "trNotes": "Refund"
         }
     ]
