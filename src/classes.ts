@@ -20,6 +20,7 @@ export async function PostClass(req: Request, res: Response) {
             Author: data.Author ,
             classNotes: data.classNotes,
             clName: data.clName,
+            active: data.active
         }),
     };
     console.log(putCommand);

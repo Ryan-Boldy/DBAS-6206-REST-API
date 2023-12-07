@@ -19,7 +19,9 @@ export async function PostClient(req: Request, res: Response) {
             clLastName: data.clLastName,
             Author:  data.Author,
             clNotes: data.clNotes,
-            clBalance: data.clBalance
+            clBalance: data.clBalance,
+            active: data.active
+
         }),
     };
     console.log(putCommand);

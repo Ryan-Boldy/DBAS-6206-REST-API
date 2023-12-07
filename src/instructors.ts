@@ -17,7 +17,9 @@ export async function PostInstructor(req: Request, res: Response) {
             inFirstName: data.inFirstName,
             inLastName: data.inLastName,
             Author: data.Author,
-            inNotes: data.inNotes
+            inNotes: data.inNotes,
+            active: data.active
+
         }),
     };
     console.log(putCommand);

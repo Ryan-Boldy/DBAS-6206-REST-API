@@ -20,6 +20,9 @@ export async function init() {
     const array: any[] = parsed['data:'];
     console.log(array);
     for(const item of array) {
+        if(item.PartitionKey !== "/bookings" && item.PartitionKey !== "/rooms" && item.PartitionKey !== "/transactions") {
+            item.active = true;
+        }
         promises.push(put(item));
     }
     await Promise.all(promises);

@@ -20,6 +20,7 @@ export async function PostStaff(req: Request, res: Response) {
             "staffApproved": { BOOL: data.staffApproved },
             "staffFirstName": { S: data.staffFirstName },
             "staffLastName": { S: data.staffLastName },
+            "active": {S: data.active}
         },
     };
     console.log(putCommand);

@@ -16,7 +16,8 @@ export async function PostStudent(req: Request, res: Response) {
             stFirstName: data.stFirstName,
             stLastName: data.stLastName,
             Author: data.Author,
-            stNotes: data.stNotes
+            stNotes: data.stNotes,
+            active: data.active,
         }),
     };
     console.log(putCommand);
