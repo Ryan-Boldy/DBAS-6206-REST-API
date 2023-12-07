@@ -38,8 +38,8 @@
             "clFirstName": "Alice",
             "clLastName": "Smith",
             "clStudents": [
-                "s7g8h9i",
-                "s10jk11l"
+                "7d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "8d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
             ],
             "clNotes": "Pending negotiation"
         },
@@ -51,8 +51,8 @@
             "clFirstName": "Bob",
             "clLastName": "Johnson",
             "clStudents": [
-                "s8g8h9i",
-                "s11jk11l"
+                "9d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "0d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
             ],
             "clNotes": "Must talk with them Re. student behavior"
         },
@@ -64,8 +64,8 @@
             "clFirstName": "Charlie",
             "clLastName": "Brown",
             "clStudents": [
-                "s9g8h9i",
-                "s12jk11l"
+                "1c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "2c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
             ],
             "clNotes": "Need to talk Re. student progression"
         },
@@ -77,8 +77,8 @@
             "clFirstName": "Diana",
             "clLastName": "Miller",
             "clStudents": [
-                "s10g8h9i",
-                "s1jk11l"
+                "3c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "4c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
             ],
             "clNotes": ""
         },
@@ -90,8 +90,8 @@
             "clFirstName": "Edward",
             "clLastName": "Davis",
             "clStudents": [
-                "s11g8h9i",
-                "s2jk11l"
+                "5c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "6c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
             ],
             "clNotes": "Leaving next week w/ students"
         },
@@ -103,8 +103,8 @@
             "clFirstName": "Fiona",
             "clLastName": "Taylor",
             "clStudents": [
-                "s12g8h9i",
-                "s3jk11l"
+                "7c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "8c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
             ],
             "clNotes": "Owed free lesson"
         },
@@ -116,8 +116,8 @@
             "clFirstName": "George",
             "clLastName": "Clark",
             "clStudents": [
-                "s1g8h9i",
-                "s4jk11l"
+                "9c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "0c2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
             ],
             "clNotes": "Meet regarding Client behaviour"
         },
@@ -129,8 +129,8 @@
             "clFirstName": "Helen",
             "clLastName": "Baker",
             "clStudents": [
-                "s2g8h9i",
-                "s5jk11l"
+                "1d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "2d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
             ],
             "clNotes": ""
         },
@@ -142,8 +142,8 @@
             "clFirstName": "Ivan",
             "clLastName": "Gonzalez",
             "clStudents": [
-                "s3g8h9i",
-                "s6jk11l"
+                "3d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "4d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
             ],
             "clNotes": ""
         },
@@ -154,13 +154,9 @@
             "clBalance": 2000.00,
             "clFirstName": "Jessica",
             "clLastName": "Lee",
-            "clTransactions": [
-                "",
-                ""
-            ],
             "clStudents": [
-                "s4g8h9i",
-                "s7jk11l"
+                "5d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+                "6d2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
             ],
             "clNotes": ""
         },
