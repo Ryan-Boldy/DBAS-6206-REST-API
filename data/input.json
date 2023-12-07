@@ -218,7 +218,7 @@
             "stFirstName": "James",
             "stLastName": "Miller",
             "stClient": "1b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Needs improvement in Math",
+            "stNotes": "Needs improvement",
             "stClasses": [
                 "1e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
                 "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
@@ -232,7 +232,7 @@
             "stFirstName": "Sophia",
             "stLastName": "Taylor",
             "stClient": "2b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Athletic and energetic",
+            "stNotes": "Uninterested",
             "stClasses": [
                 "2e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
                 "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
@@ -246,7 +246,7 @@
             "stFirstName": "Liam",
             "stLastName": "Clark",
             "stClient": "2b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Enjoys reading",
+            "stNotes": "Enjoys theory",
             "stClasses": [
                 "2e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
                 "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
@@ -260,7 +260,7 @@
             "stFirstName": "Olivia",
             "stLastName": "Baker",
             "stClient": "3b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Artistic talent",
+            "stNotes": "Talented but not trained",
             "stClasses": [
                 "3e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
                 "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
@@ -274,7 +274,7 @@
             "stFirstName": "Noah",
             "stLastName": "Gonzalez",
             "stClient": "3b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Interested in science",
+            "stNotes": "Interested in many instruments",
             "stClasses": [
                 "3e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
                 "5e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
@@ -288,7 +288,7 @@
             "stFirstName": "Isabella",
             "stLastName": "Lee",
             "stClient": "4b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Participates in sports",
+            "stNotes": "Participates in extracirricular band",
             "stClasses": [
                 "4e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
                 "6e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
@@ -330,7 +330,7 @@
             "stFirstName": "Ethan",
             "stLastName": "Baker",
             "stClient": "5b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Passionate about history",
+            "stNotes": "Passionate about percussion",
             "stClasses": [
                 "6e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
                 "8e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
@@ -343,7 +343,7 @@
             "stFirstName": "Sophie",
             "stLastName": "Johnson",
             "stClient": "6b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Enjoys mathematics",
+            "stNotes": "Enjoys thoery",
             "stClasses": [
                 "6e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
                 "8e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
@@ -369,7 +369,7 @@
             "stFirstName": "Avery",
             "stLastName": "Clark",
             "stClient": "7b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Loves outdoor activities",
+            "stNotes": "Loves outdoor performances",
             "stClasses": [
                 "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
                 "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
@@ -395,7 +395,7 @@
             "stFirstName": "Harper",
             "stLastName": "Gonzalez",
             "stClient": "8b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Enjoys music",
+            "stNotes": "Enjoys orhcestral",
             "stClasses": [
                 "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
                 "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
@@ -408,7 +408,7 @@
             "stFirstName": "Michael",
             "stLastName": "Lee",
             "stClient": "8b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Passionate about science",
+            "stNotes": "Passionate about music psychology",
             "stClasses": [
                 "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
                 "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
@@ -421,7 +421,7 @@
             "stFirstName": "Abigail",
             "stLastName": "Gonzalez",
             "stClient": "9b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Loves literature",
+            "stNotes": "Loves music literature",
             "stClasses": [
                 "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
                 "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
@@ -434,7 +434,7 @@
             "stFirstName": "Daniel",
             "stLastName": "Taylor",
             "stClient": "9b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
-            "stNotes": "Interested in history",
+            "stNotes": "Interested in music history",
             "stClasses": [
                 "7e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
                 "9e2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq"
@@ -622,6 +622,50 @@
             "PartitionKey": "/rooms",
             "SortKey": "Small_4",
             "rmMax": 4
+        }, 
+        {
+            "PartitionKey": "/transactions",
+            "SortKey": "4g2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "trClient": "5b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "trInstructor": "2f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "trStatus": true,
+            "trAmount": 250.00,
+            "trDrection": true,
+            "trNotes": "Payment is very late."
+        },
+        {
+            "PartitionKey": "/transactions",
+            "SortKey": "1g2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "3a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "trClient": "6b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "trInstructor": "3f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "trStatus": true,
+            "trAmount": 750.00,
+            "trDrection": true,
+            "trNotes": "One month of essons"
+        },
+        {
+            "PartitionKey": "/transactions",
+            "SortKey": "2g2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "2a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "trClient": "8b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "trInstructor": "1f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "trStatus": false,
+            "trAmount": 500.00,
+            "trDrection": true,
+            "trNotes": "Two weeks of lessons"
+        },
+        {
+            "PartitionKey": "/transactions",
+            "SortKey": "3g2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "Author": "1a2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "trClient": "7b2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "trInstructor": "2f2b3c4d-5e6f-7g8h-9i10-jk11lmno12pq",
+            "trStatus": false,
+            "trAmount": 100.00,
+            "trDrection": false,
+            "trNotes": "Refund"
         }
     ]
 }
